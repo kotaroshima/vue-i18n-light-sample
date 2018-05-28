@@ -1,0 +1,48 @@
+{
+  "name": "vue-i18n-light-sample",
+  "version": "1.0.0",
+  "description": "Sample app of vue-i18n-light",
+  "main": "server/index.js",
+  "scripts": {
+    "build": "webpack-cli --display-error-details --config webpack.config.js",
+    "lint": "eslint -c .eslintrc_client.json src",
+    "start": "node $npm_package_main",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kotaroshima/vue-i18n-light-sample.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "Vue.js",
+    "i18n"
+  ],
+  "author": "Kotaro Shima",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kotaroshima/vue-i18n-light-sample/issues"
+  },
+  "homepage": "https://github.com/kotaroshima/vue-i18n-light-sample#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-preset-env": "^1.7.0",
+    "ejs-html-loader": "^3.1.0",
+    "eslint": "^4.19.1",
+    "eslint-config-google": "^0.9.1",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-vue": "^4.5.0",
+    "html-loader": "^0.5.5",
+    "vue": "^2.5.16",
+    "vue-i18n-light": "git+https://github.com/kotaroshima/vue-i18n-light.git#v0.2.0",
+    "webpack": "^4.9.1",
+    "webpack-cli": "^2.1.4"
+  }
+}
