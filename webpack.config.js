@@ -12,19 +12,28 @@ module.exports = supportedLocales.map((locale) => {
   return {
     mode: (process.env.NODE_ENV === 'development' ? process.env.NODE_ENV : 'production'),
     entry: {
+      'vue-i18n-light': 'vue-i18n-light',
+      ejs: 'ejs',
       app: './src/index.js',
     },
     output: {
       publicPath: 'dist/',
       path: path.resolve(__dirname, 'dist'),
-      filename: `${locale}/[name].js`,
+      filename: (arg) => {
+        if (['vue-i18n-light','ejs'].includes(arg.chunk.name)) {
+            return `[name].bundle.js`;
+        }
+        return `${locale}/[name].bundle.js`;
+      },
       chunkFilename: `${locale}/[name].bundle.js`,
     },
     resolve: {
       alias: {
-        vue$: 'vue/dist/vue.esm.js',
         ejs$: 'ejs/ejs.js',
       },
+    },
+    externals: {
+      vue: 'Vue',
     },
     module: {
       rules: [

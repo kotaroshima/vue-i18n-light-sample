@@ -8,10 +8,13 @@
 <div id="app">
   <component1></component1>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<script src="https://kotaroshima.github.io/vue-i18n-light/dist/vue-i18n-light.min.js"></script>
+<script src="/dist/ejs.bundle.js"></script>
 <script type="text/javascript">
 var userLang = navigator.language || navigator.userLanguage;
 var scriptTag = document.createElement('script');
-scriptTag.setAttribute('src','./dist/'+userLang+'/app.js');
+scriptTag.setAttribute('src','./dist/'+userLang+'/app.bundle.js');
 document.head.appendChild(scriptTag);
 </script>
 </body>

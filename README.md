@@ -1,5 +1,5 @@
 # vue-i18n-light-sample
-Sample app of vue-i18n-light
+Sample app of [vue-i18n-light](https://github.com/kotaroshima/vue-i18n-light)
 
 ## Installation
 

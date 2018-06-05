@@ -41,7 +41,7 @@
     "eslint-plugin-vue": "^4.5.0",
     "html-loader": "^0.5.5",
     "vue": "^2.5.16",
-    "vue-i18n-light": "git+https://github.com/kotaroshima/vue-i18n-light.git#v0.2.0",
+    "vue-i18n-light": "git+https://github.com/kotaroshima/vue-i18n-light.git#v0.3.0",
     "webpack": "^4.9.1",
     "webpack-cli": "^2.1.4"
   }
